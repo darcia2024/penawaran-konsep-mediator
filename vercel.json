@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/hamasah",
+      "destination": "/"
+    },
+    {
+      "source": "/hamasah/(.*)",
+      "destination": "/$1"
+    }
+  ]
+}
