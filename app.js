@@ -1,7 +1,7 @@
 /**
  * HAMASAH INTERNATIONAL - RANCANGAN 1 WEBSITE TERPADU (2 LAYANAN)
  * Controller Interaktif untuk Proposal Resmi Dar Developer:
- * - Layanan 1 (Publik): Akun Seleksi Ujian, AI Konsultan Publik, Berita Mesir
+ * - Layanan 1 (Publik): Akun Registrasi Keberangkatan, AI Konsultan Publik, Berita Mesir
  * - Layanan 2 (App Portal): Hamasah Family (Wali), Hamasah Campus (LMS & AI), Hamasah Operations (Auto Invoice/Kuitansi)
  */
 
@@ -505,7 +505,7 @@ let ARTIKEL_DATA = [
 
 <p>"Setibanya di Kairo, rombongan santri akan langsung disambut oleh perwakilan musyrif Mesir. Santri segera diantar menggunakan bus khusus menuju Rumah 1 di kawasan Madinat Nasr untuk beristirahat, orientasi kamar, dan penyesuaian iklim sebelum memasuki pekan ta'aruf kampus Al-Azhar pekan depan," terang Ustaz Ahmad Fauzi.</p>
 
-<p>Salah seorang perwakilan wali santri asal Surabaya, Bapak Hendra Kusuma, menyampaikan apresiasinya atas keteraturan dan transparansi bimbingan Hamasah International sejak awal seleksi hingga hari keberangkatan.</p>
+<p>Salah seorang perwakilan wali santri asal Surabaya, Bapak Hendra Kusuma, menyampaikan apresiasinya atas keteraturan dan transparansi bimbingan Hamasah International sejak awal pendaftaran dan pemberkasan hingga hari keberangkatan.</p>
 
 <p>"Sebagai orang tua, tentu ada rasa berat melepas anak ke luar negeri. Namun melihat kesigapan pembina Hamasah yang mendampingi dalam satu penerbangan serta tersedianya portal pemantauan harian, hati kami menjadi sangat tenang dan mantap," tutur Hendra penuh haru.</p>`
   },
@@ -1531,7 +1531,7 @@ const HAMASAH_AI_KB = [
     answer: `<strong>Perkiraan biaya (simulasi):</strong><br>
       - SPP bimbingan Hamasah: sekitar <strong>Rp2.500.000/bulan</strong>, sudah termasuk asrama ber-AC di Rumah 1 Madinat Nasr, katering harian, dan bimbingan talaqqi.<br>
       - Biaya sekali di awal: pendaftaran, pengurusan visa pelajar, dan tiket keberangkatan.<br>
-      - Kuliah di Al-Azhar sendiri gratis untuk mahasiswa asing yang lolos seleksi.<br><br>
+      - Kuliah di Al-Azhar sendiri bebas biaya SPP bagi mahasiswa internasional yang memenuhi persyaratan dokumen.<br><br>
       Rincian resmi dan simulasi lengkap ada di brosur digital pada bagian <em>Layanan Publik</em>.`
   },
   {
@@ -1540,17 +1540,17 @@ const HAMASAH_AI_KB = [
       - Lulusan SMA/MA/pesantren sederajat, usia idealnya di bawah 20 tahun.<br>
       - Ijazah + transkrip nilai, akta lahir, KK, dan paspor (boleh menyusul).<br>
       - Bisa membaca Al-Qur'an dengan tartil dan punya dasar bahasa Arab.<br>
-      - Mengisi formulir online di menu <em>Layanan Publik</em>, lalu berkas diverifikasi panitia lewat WhatsApp.<br><br>
-      Setelah berkas lengkap, kamu otomatis dapat akun untuk memantau jadwal seleksi.`
+      - Mengisi formulir online di menu <em>Layanan Publik</em>, lalu berkas divalidasi tim konsultan lewat WhatsApp.<br><br>
+      Setelah berkas lengkap, kamu otomatis dapat akun untuk memantau progres persiapan keberangkatan.`
   },
   {
-    keys: ['jadwal', 'seleksi', 'tes', 'ujian', 'kapan', 'gelombang', 'pengumuman', 'wawancara', 'tahdid'],
-    answer: `<strong>Alur seleksi 2026 (simulasi):</strong><br>
-      1. Pendaftaran & verifikasi berkas.<br>
-      2. Tes tulis dasar (bahasa Arab & keislaman) + <em>tahdid mustawa</em>.<br>
-      3. Wawancara lisan, biasanya sesi pagi (WIB).<br>
-      4. Pengumuman kelulusan lewat akun seleksi + WhatsApp.<br><br>
-      Tanggal pastinya diumumkan di akun seleksi masing-masing calon santri. Contoh di kartu simulasi: wawancara 15 September 2026.`
+    keys: ['jadwal', 'keberangkatan', 'berangkat', 'terbang', 'kapan', 'gelombang', 'pengumuman', 'wawancara', 'tahdid', 'dokumen', 'pasti'],
+    answer: `<strong>Alur 4 Tahap Menuju Kairo (Pasti Berangkat):</strong><br>
+      1. Registrasi online & verifikasi berkas awal.<br>
+      2. Validasi dokumen resmi (ijazah, terjemahan, paspor) & pemantapan bahasa <em>tahdid mustawa</em>.<br>
+      3. Penerbitan visa pelajar & pemesanan tiket penerbangan rombongan.<br>
+      4. Terbang bersama ke Kairo & penjemputan resmi ke asrama Madinat Nasr.<br><br>
+      Setiap santri dapat memantau estimasi tanggal terbang dan kelengkapan berkas lewat akun keberangkatan masing-masing. Contoh simulasi: rombongan kloter 1 terbang 15 September 2026.`
   },
   {
     keys: ['kairo', 'mesir', 'hidup', 'tinggal', 'asrama', 'makan', 'keseharian', 'sehari-hari', 'cuaca', 'aman', 'lingkungan'],
@@ -1585,8 +1585,8 @@ const HAMASAH_AI_KB = [
   },
   {
     keys: ['beasiswa', 'gratis', 'keringanan', 'cicil', 'angsur', 'subsidi'],
-    answer: `<strong>Beasiswa & keringanan (simulasi):</strong><br>
-      Kuliah S1 di Al-Azhar gratis bagi yang lolos seleksi. Untuk biaya bimbingan Hamasah, ada opsi cicilan dan keringanan bagi keluarga yang membutuhkan, dinilai kasus per kasus oleh pengurus.<br><br>
+    answer: `<strong>Biaya kuliah & keringanan (simulasi):</strong><br>
+      Kuliah S1 di Al-Azhar bebas biaya kuliah bagi mahasiswa asing. Untuk biaya bimbingan dan fasilitas asrama Hamasah, ada opsi cicilan dan keringanan bagi keluarga yang membutuhkan, dinilai kasus per kasus oleh pengurus.<br><br>
       Silakan bicara langsung dengan admin untuk skema yang cocok.`
   },
   {

@@ -11,8 +11,8 @@ Rancangan 1 Website Terpadu dengan 2 Layanan Utama (**Publik & App Portal**) dar
 **Layanan publik terdepan untuk masyarakat luas, calon santri, dan calon wali:**
 - **Profil Lembaga:** Visi misi pimpinan lembaga dan galeri Kairo.
 - **Informasi Program:** Brosur digital lengkap program bimbingan studi Al-Azhar.
-- **Alur Pendaftaran & Seleksi:** Panduan tahapan pendaftaran dari awal hingga keberangkatan.
-- **Akun Seleksi Ujian Calon Santri:** Akses calon santri untuk cek jadwal tes, tips seleksi Al-Azhar, dan status kelulusan (Daftar, Tes, Lulus).
+- **Alur Pendaftaran & Persiapan Keberangkatan:** Panduan tahapan pendaftaran dari awal hingga keberangkatan.
+- **Akun Registrasi Keberangkatan Calon Santri:** Akses calon santri untuk cek progres dokumen, visa, jadwal terbang, dan panduan Kairo (Pasti Berangkat).
 - **Pusat Informasi & AI Konsultan:** Tanya jawab cerdas 24 jam serta kontak WhatsApp resmi.
 - **Artikel Berita Kegiatan Mesir:** Dokumentasi kegiatan santri di Kairo yang dapat ditulis langsung oleh pengurus (CMS Mandiri).
 
@@ -39,7 +39,7 @@ Rancangan 1 Website Terpadu dengan 2 Layanan Utama (**Publik & App Portal**) dar
    - **Auto Financial Generator:** Pembuatan otomatis invoice SPP (INV/HI/2026/XXXX) dan kuitansi sah digital PDF (KWT/HI/2026/XXXX).
    - **Auto-Sync Portal & WA:** Bukti pembayaran langsung tampil di dashboard wali (Portal Keluarga) dan terkirim ke WhatsApp resmi wali.
    - **Berkas Visa Santri:** Tracking paspor, legalisasi 4 kementerian di Jakarta, dan masa berlaku visa pelajar Mesir.
-   - **Generate Akun Ujian:** Pembuatan instan akun calon santri untuk akses seleksi di Layanan Publik.
+   - **Generate Akun Keberangkatan:** Pembuatan instan akun calon santri untuk akses registrasi keberangkatan di Layanan Publik.
    - **Logistik Asrama Kairo:** Inventaris fasilitas kamar santri ber-AC dan katering harian di Madinat Nasr.
 
 ---
@@ -54,7 +54,7 @@ Rancangan 1 Website Terpadu dengan 2 Layanan Utama (**Publik & App Portal**) dar
 ---
 
 ## Roadmap Pengembangan 5 Fase Bertahap
-- **FASE 01:** Layanan 1 (Publik, Profil, Berita Kegiatan Mesir & Akun Seleksi)
+- **FASE 01:** Layanan 1 (Publik, Profil, Berita Kegiatan Mesir & Akun Keberangkatan)
 - **FASE 02:** Layanan 2 (Portal Operasional: Staff & Auto Invoice/Kuitansi)
 - **FASE 03:** Layanan 2 (Portal Keluarga: Monitoring Wali Santri & Kuitansi PDF)
 - **FASE 04:** Layanan 2 (Portal Akademik: Santri, Pembina & LMS AI Study Partner)
@@ -65,7 +65,7 @@ Rancangan 1 Website Terpadu dengan 2 Layanan Utama (**Publik & App Portal**) dar
 ## Cara Mencoba Prototype
 1. Buka browser: **http://localhost:3000**
 2. Jelajahi struktur arsitektur 1 Website Terpadu dengan 2 Layanan Utama.
-3. Coba fitur **Akun Seleksi Ujian** calon santri pada Layanan Publik.
+3. Coba fitur **Akun Registrasi Keberangkatan** calon santri pada Layanan Publik.
 4. Coba simulasi **Portal Keluarga Hamasah** untuk monitoring santri & unduh kuitansi PDF.
 5. Coba simulasi **Portal Akademik Hamasah** untuk progress maddah & AI study partner.
 6. Coba simulasi **Portal Operasional Hamasah** untuk auto-generate invoice & kuitansi sah.
