@@ -4912,20 +4912,36 @@ button, input, select, textarea {
 }
 
 .rapor-badge-mumtaz {
-  background: rgba(16, 185, 129, 0.1);
-  color: var(--accent-emerald);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11.5px;
   font-weight: 700;
-  font-size: 11px;
-  padding: 3px 8px;
-  border-radius: 9999px;
-  border: 1px solid rgba(16, 185, 129, 0.25);
-  display: inline-block;
+  line-height: 1;
+  white-space: nowrap !important;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  box-shadow: 0 1px 2px rgba(4, 120, 87, 0.04);
+  letter-spacing: 0.01em;
+  transition: all 0.15s ease;
+}
+
+.rapor-badge-mumtaz.murtafi {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  box-shadow: 0 1px 2px rgba(146, 64, 14, 0.05);
+  font-weight: 750;
 }
 
 .rapor-status-done {
   font-size: 11.5px;
   font-weight: 600;
-  color: var(--accent-emerald);
+  color: #059669;
+  white-space: nowrap;
 }
 
 /* 6. Fitur Khusus: Kendala Anak & Solusi Pembina */
@@ -8338,7 +8354,7 @@ button, input, select, textarea {
 
 
 /* ==========================================================================
-   MOBILE OPTIMIZATION PASS — compact density + 2-up tile grids
+   MOBILE OPTIMIZATION PASS : compact density + 2-up tile grids
    (appended last so it wins over earlier scattered breakpoints)
    ========================================================================== */
 @media (max-width: 700px) {
