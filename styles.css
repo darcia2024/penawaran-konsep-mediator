@@ -8762,3 +8762,173 @@ button, input, select, textarea {
   .section-title { font-size: clamp(1.5rem, 7vw, 1.85rem); }
   .lattice-hero-title { font-size: clamp(1.95rem, 8.2vw, 2.7rem); }
 }
+
+/* ==========================================================================
+   INTERACTIVE SCROLL REVEAL & MOTION SYSTEM (DAR DEV LUXURY SUITE)
+   ========================================================================== */
+
+/* Smooth Native Page Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reading Progress Bar pinned at top of viewport */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #E7B10C 0%, #f59e0b 45%, #059669 100%);
+  z-index: 99999;
+  pointer-events: none;
+  transition: width 0.08s linear;
+  box-shadow: 0 1px 8px rgba(231, 177, 12, 0.45);
+}
+
+/* Hero Section Subtle Entrance Choreography */
+.lattice-hero-centered .hero-eyebrow,
+.lattice-hero-centered .lattice-hero-title,
+.lattice-hero-centered .lattice-hero-desc,
+.lattice-hero-centered .lattice-hero-actions {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroEntranceFade 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.lattice-hero-centered .hero-eyebrow {
+  animation-delay: 0.08s;
+}
+
+.lattice-hero-centered .lattice-hero-title {
+  animation-delay: 0.18s;
+}
+
+.lattice-hero-centered .lattice-hero-desc {
+  animation-delay: 0.28s;
+}
+
+.lattice-hero-centered .lattice-hero-actions {
+  animation-delay: 0.38s;
+}
+
+@keyframes heroEntranceFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Progressive Scroll Reveal: Single Elements */
+html.has-scroll-reveal .scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-reveal .scroll-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Progressive Scroll Reveal: Visual Scale & Float */
+html.has-scroll-reveal .scroll-reveal-scale {
+  opacity: 0;
+  transform: translateY(24px) scale(0.97);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-reveal .scroll-reveal-scale.is-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Progressive Scroll Reveal: Staggered Children in Grids & Lists */
+html.has-scroll-reveal .scroll-stagger > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-reveal .scroll-stagger.is-revealed > *:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.04s;
+}
+
+html.has-scroll-reveal .scroll-stagger.is-revealed > *:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.12s;
+}
+
+html.has-scroll-reveal .scroll-stagger.is-revealed > *:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.20s;
+}
+
+html.has-scroll-reveal .scroll-stagger.is-revealed > *:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.28s;
+}
+
+html.has-scroll-reveal .scroll-stagger.is-revealed > *:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.36s;
+}
+
+html.has-scroll-reveal .scroll-stagger.is-revealed > *:nth-child(6) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.44s;
+}
+
+html.has-scroll-reveal .scroll-stagger.is-revealed > *:nth-child(n+7) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.50s;
+}
+
+/* Animated Progress & KPI Bar Transition */
+.compare-efficiency-bar .bar-fill,
+.kpi-progress-bar .kpi-fill {
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Accessibility: User Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .scroll-progress-bar {
+    display: none;
+  }
+  .lattice-hero-centered .hero-eyebrow,
+  .lattice-hero-centered .lattice-hero-title,
+  .lattice-hero-centered .lattice-hero-desc,
+  .lattice-hero-centered .lattice-hero-actions {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  html.has-scroll-reveal .scroll-reveal,
+  html.has-scroll-reveal .scroll-reveal-scale,
+  html.has-scroll-reveal .scroll-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

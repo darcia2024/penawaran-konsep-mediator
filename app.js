@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initRoleEcosystemDiagram();
   initRoadmapTimeline();
   initHamasahAiAssistant();
+  initScrollAnimations();
 });
 
 // ==========================================================================
@@ -1735,4 +1736,192 @@ function initHamasahAiAssistant() {
       if (card) ask(card.getAttribute('data-q'));
     });
   }
+}
+
+// ==========================================================================
+// 10. INTERACTIVE SCROLL REVEAL & MOTION SYSTEM (DAR DEV)
+// ==========================================================================
+function initScrollAnimations() {
+  // Respect user preference for reduced motion
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  // Graceful degradation if IntersectionObserver is not supported
+  if (!('IntersectionObserver' in window)) {
+    return;
+  }
+
+  // Enable CSS scroll reveal rules
+  document.documentElement.classList.add('has-scroll-reveal');
+
+  // A. Hairline Reading Progress Indicator at the top of the viewport
+  let progressBar = document.getElementById('scroll-progress');
+  if (!progressBar) {
+    progressBar = document.createElement('div');
+    progressBar.id = 'scroll-progress';
+    progressBar.className = 'scroll-progress-bar';
+    progressBar.setAttribute('aria-hidden', 'true');
+    document.body.prepend(progressBar);
+  }
+
+  let scrollTicking = false;
+  window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (totalHeight > 0) {
+          const progress = Math.min(100, Math.max(0, (window.scrollY / totalHeight) * 100));
+          progressBar.style.width = progress.toFixed(2) + '%';
+        }
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  }, { passive: true });
+
+  // B. Single Reveal Observer
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.08,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  const singleRevealSelectors = [
+    '.section-head',
+    '.section-head-centered',
+    '.editorial-hub-column',
+    '.applicant-credential-card',
+    '.ai-interactive-mockup',
+    '.family-profile-hero',
+    '.rapor-summary-banner',
+    '.family-musyrif-note-card',
+    '.campus-preview-board',
+    '.campus-study-dashboard',
+    '.operations-board',
+    '.quick-invoice-tool',
+    '.compare-card',
+    '.stakeholder-flow-card',
+    '.roadmap-flow-track',
+    '.enterprise-trust-banner',
+    '.closing-cta-card',
+    '.family-kendala-section'
+  ];
+
+  singleRevealSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(el => {
+      if (el.closest('#beranda')) return;
+      el.classList.add('scroll-reveal');
+      revealObserver.observe(el);
+    });
+  });
+
+  // Scale reveal for prominent boards
+  const scaleRevealSelectors = [
+    '.applicant-credential-card',
+    '.campus-preview-board',
+    '.operations-board'
+  ];
+
+  scaleRevealSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(el => {
+      el.classList.remove('scroll-reveal');
+      el.classList.add('scroll-reveal-scale');
+    });
+  });
+
+  // C. Staggered Grids and Lists Observer
+  const staggerObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.05,
+    rootMargin: '0px 0px -30px 0px'
+  });
+
+  const staggerSelectors = [
+    '.editorial-flow-track',
+    '.pendaftaran-features-grid',
+    '.family-stats-row',
+    '.kendala-cards-grid',
+    '.kendala-step-flow',
+    '.santri-eval-grid',
+    '.op-kpi-grid',
+    '.service-features-list',
+    '.simple-role-grid',
+    '.executive-summary-points',
+    '.kpi-impact-metrics-grid',
+    '.stakeholder-grid-5',
+    '.roadmap-grid',
+    '.news-cards-grid',
+    '.family-gallery-grid'
+  ];
+
+  staggerSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(container => {
+      container.classList.add('scroll-stagger');
+      staggerObserver.observe(container);
+    });
+  });
+
+  // D. Animated Progress & KPI Fill Bars
+  const barElements = document.querySelectorAll('.bar-fill, .kpi-fill');
+  if (barElements.length > 0) {
+    barElements.forEach(bar => {
+      const match = bar.getAttribute('style')?.match(/width:\s*([^;]+)/);
+      const targetWidth = bar.style.width || (match ? match[1] : '100%');
+      bar.dataset.targetWidth = targetWidth;
+      bar.style.width = '0%';
+    });
+
+    const barObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = entry.target.querySelectorAll('.bar-fill, .kpi-fill');
+          bars.forEach((bar, idx) => {
+            setTimeout(() => {
+              if (bar.dataset.targetWidth) {
+                bar.style.width = bar.dataset.targetWidth;
+              }
+            }, idx * 100);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -20px 0px'
+    });
+
+    document.querySelectorAll('.arch-comparison-board, .kpi-impact-metrics-grid').forEach(board => {
+      barObserver.observe(board);
+    });
+  }
+
+  // E. Tab switcher hook to ensure hidden tab contents are visible when activated
+  document.querySelectorAll('.tab-btn, .family-subnav-btn, .lms-chapter-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.scroll-reveal:not(.is-revealed), .scroll-stagger:not(.is-revealed)').forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('is-revealed');
+          }
+        });
+      }, 50);
+    });
+  });
 }
