@@ -22,7 +22,7 @@ Rancangan 1 Website Terpadu dengan 2 Layanan Utama (**Publik & App Portal**) dar
 1. **Portal Keluarga Hamasah (Wali Santri / Portal Keluarga):**
    - Monitoring absensi harian (Sholat Subuh berjamaah 98%).
    - Capaian tahfidz & perkembangan belajar (Rata-rata Mumtaz 94, Hafalan 7 Juz Mutqin).
-   - Catatan evaluasi adab oleh ustaz pembina asrama Madinat Nasr.
+   - Catatan evaluasi adab oleh ustaz pembina asrama Hay Asyir.
    - Unduh dokumen rapor resmi semester Al-Azhar format PDF.
    - Foto dan update kegiatan harian santri di Kairo.
    - Unduh invoice & kuitansi sah pembayaran berstempel format PDF.
@@ -40,7 +40,7 @@ Rancangan 1 Website Terpadu dengan 2 Layanan Utama (**Publik & App Portal**) dar
    - **Auto-Sync Portal & WA:** Bukti pembayaran langsung tampil di dashboard wali (Portal Keluarga) dan terkirim ke WhatsApp resmi wali.
    - **Berkas Visa Santri:** Tracking paspor, legalisasi 4 kementerian di Jakarta, dan masa berlaku visa pelajar Mesir.
    - **Generate Akun Keberangkatan:** Pembuatan instan akun calon santri untuk akses registrasi keberangkatan di Layanan Publik.
-   - **Logistik Asrama Kairo:** Inventaris fasilitas kamar santri ber-AC dan katering harian di Madinat Nasr.
+   - **Logistik Asrama Kairo:** Inventaris fasilitas kamar santri ber-AC dan katering harian di Hay Asyir.
 
 ---
 

@@ -116,7 +116,7 @@ const UDEMY_LESSONS = {
       { num: '02', text: '<strong>Najis Mutawassithah (Sedang):</strong> Darah, nanah, bangkai, dan khamr; wajib hilang warna, bau, dan rasa.' },
       { num: '03', text: '<strong>Najis Mughalladhah (Berat):</strong> Anjing dan babi; disucikan 7 kali basuhan dan salah satunya dicampur debu suci.' }
     ],
-    note: 'Santri telah mempraktikkan tata cara pensucian najis di asrama Madinat Nasr.'
+    note: 'Santri telah mempraktikkan tata cara pensucian najis di asrama Hay Asyir.'
   },
   'ch2-1': {
     chapter: 'Bab 02: Fiqh Wudhu & Pembatalnya',
@@ -499,11 +499,11 @@ let ARTIKEL_DATA = [
 
 <p>Pihak lembaga juga memberikan pesan penenang bagi para orang tua yang mengantar agar tidak merasa waswas melepaskan putra-putrinya ke negeri perantauan. Melalui ekosistem digital terpadu Hamasah International, setiap aspek kehidupan santri, mulai dari laporan presensi sholat Subuh, evaluasi adab, catatan kesehatan harian, hingga mutaba'ah tahfidz akan terpantau secara berkala dan dapat diakses langsung oleh wali santri di tanah air melalui Portal Keluarga.</p>
 
-<h4 class="article-subheading">Pendampingan Penuh Hingga Tiba di Asrama Madinat Nasr</h4>
+<h4 class="article-subheading">Pendampingan Penuh Hingga Tiba di Asrama Hay Asyir</h4>
 
 <p>Kepala Bimbingan Keberangkatan Hamasah International, Ustaz Ahmad Fauzi, Lc., menjelaskan bahwa seluruh prosedur logistik perjalanan telah dipersiapkan secara komprehensif. Tim telah menyelesaikan verifikasi berkas izin tinggal, tiket penerbangan langsung tanpa transit panjang, serta koordinasi armada penjemputan resmi di Bandara Internasional Kairo.</p>
 
-<p>"Setibanya di Kairo, rombongan santri akan langsung disambut oleh perwakilan musyrif Mesir. Santri segera diantar menggunakan bus khusus menuju Rumah 1 di kawasan Madinat Nasr untuk beristirahat, orientasi kamar, dan penyesuaian iklim sebelum memasuki pekan ta'aruf kampus Al-Azhar pekan depan," terang Ustaz Ahmad Fauzi.</p>
+<p>"Setibanya di Kairo, rombongan santri akan langsung disambut oleh perwakilan musyrif Mesir. Santri segera diantar menggunakan bus khusus menuju Asrama 1 di kawasan Hay Asyir untuk beristirahat, orientasi kamar, dan penyesuaian iklim sebelum memasuki pekan ta'aruf kampus Al-Azhar pekan depan," terang Ustaz Ahmad Fauzi.</p>
 
 <p>Salah seorang perwakilan wali santri asal Surabaya, Bapak Hendra Kusuma, menyampaikan apresiasinya atas keteraturan dan transparansi bimbingan Hamasah International sejak awal pendaftaran dan pemberkasan hingga hari keberangkatan.</p>
 
@@ -527,7 +527,7 @@ let ARTIKEL_DATA = [
 
 <h4 class="article-subheading">Memadukan Perkuliahan Kampus dan Keberkahan Sanad Masyaikh</h4>
 
-<p>Musyrif Pembina Rumah 1 Madinat Nasr, Ustaz Farhan Abdullah, Lc., mengungkapkan bahwa keberadaan program talaqqi ini dirancang khusus untuk melengkapi perkuliahan formal di fakultas. Di ruang kuliah kampus, mahasiswa Al-Azhar menerima paparan materi kurikulum secara luas, sedangkan di majelis talaqqi, santri melatih ketajaman membaca teks Arab klasik tanpa harakat kata demi kata di hadapan para guru bersanad.</p>
+<p>Musyrif Pembina Asrama 1 Hay Asyir, Ustaz Farhan Abdullah, Lc., mengungkapkan bahwa keberadaan program talaqqi ini dirancang khusus untuk melengkapi perkuliahan formal di fakultas. Di ruang kuliah kampus, mahasiswa Al-Azhar menerima paparan materi kurikulum secara luas, sedangkan di majelis talaqqi, santri melatih ketajaman membaca teks Arab klasik tanpa harakat kata demi kata di hadapan para guru bersanad.</p>
 
 <blockquote class="article-quote">
   <p>"Metode talaqqi di serambi Al-Azhar adalah ruh keilmuan Islam yang telah teruji selama lebih dari seribu tahun. Kami di Hamasah memastikan setiap santri tidak sekadar hadir, melainkan didampingi musyrif asrama dalam mutaba'ah catatan, pemaknaan lafaz, hingga penguasaan argumentasi dalil fiqih," jelas Ustaz Farhan di sela-sela majelis.</p>
@@ -581,17 +581,17 @@ let ARTIKEL_DATA = [
   },
   {
     id: 4,
-    judul: "Silaturahmi Santri dan Pembagian Buku Panduan Akademik di Asrama Madinat Nasr",
+    judul: "Silaturahmi Santri dan Pembagian Buku Panduan Akademik di Asrama Hay Asyir",
     kategori: "Asrama & Komunitas",
     gambar: "assets/cairo-skyline.jpg",
     penulis: "Pengurus Asrama Kairo",
     rolePenulis: "Tim Logistik & Pelayanan Asrama",
     avatarPenulis: "assets/avatar-hamasah.png",
     tanggal: "18 Agustus 2026",
-    lokasi: "Madinat Nasr, Kairo, Mesir",
+    lokasi: "Hay Asyir, Kairo, Mesir",
     waktuBaca: "5 Menit Baca",
     ringkasan: "Kegiatan kebersamaan santri asrama Kairo dalam pembagian diktat panduan kuliah Al-Azhar serta evaluasi kesehatan dan kebersihan berkala.",
-    isi: `<p class="article-lead"><strong>KAIRO :</strong> Semangat ukhuwah dan kekeluargaan mewarnai aula pertemuan Rumah 1 Asrama Hamasah International di kawasan Madinat Nasr, Kairo, Mesir. Pengurus asrama menggelar agenda silaturahmi bulanan yang dirangkai dengan pembagian buku panduan akademik Al-Azhar, sosialisasi tata tertib kota Kairo, serta pemeriksaan kesehatan berkala bagi seluruh santri mukim.</p>
+    isi: `<p class="article-lead"><strong>KAIRO :</strong> Semangat ukhuwah dan kekeluargaan mewarnai aula pertemuan Rumah 1 Asrama Hamasah International di kawasan Hay Asyir, Kairo, Mesir. Pengurus asrama menggelar agenda silaturahmi bulanan yang dirangkai dengan pembagian buku panduan akademik Al-Azhar, sosialisasi tata tertib kota Kairo, serta pemeriksaan kesehatan berkala bagi seluruh santri mukim.</p>
 
 <p>Pertemuan ini dihadiri oleh jajaran asatidz pembina, musyrif adab asrama, tim logistik Rumah 1, serta puluhan santri dari berbagai wilayah Indonesia yang tengah menempuh pendidikan di bumi para nabi tersebut.</p>
 
@@ -953,7 +953,7 @@ function initOperationsDashboard() {
         </td>
         <td>
           <span class="op-student-name">${escapeHtml(santri)}</span>
-          <span class="op-student-sub">Rumah Asrama · Madinat Nasr</span>
+          <span class="op-student-sub">Rumah Asrama · Hay Asyir</span>
         </td>
         <td>${keterangan}</td>
         <td><strong style="color: var(--text-main);">${nominal}</strong></td>
@@ -1038,20 +1038,20 @@ function openDocPreview(code, name, prog, nom, status) {
   if (studentNameEl) studentNameEl.innerText = safeName;
   
   // Map placement based on student
-  let placement = 'Rumah 1 · Madinat Nasr, Kairo, Mesir';
+  let placement = 'Rumah 1 · Hay Asyir, Kairo, Mesir';
   let guardian = 'Wali: Bpk. Hendra Kusuma & Ibu Siti Aminah';
   let emailSlug = 'raihan';
 
   if (safeName.toLowerCase().includes('fatih')) {
-    placement = 'Rumah 2 · Madinat Nasr, Kairo, Mesir';
+    placement = 'Rumah 2 · Hay Asyir, Kairo, Mesir';
     guardian = 'Wali: Bpk. Ridwan Hakim & Ibu Nurul Hidayah';
     emailSlug = 'fatih';
   } else if (safeName.toLowerCase().includes('zaid')) {
-    placement = 'Rumah 1 · Madinat Nasr, Kairo, Mesir';
+    placement = 'Rumah 1 · Hay Asyir, Kairo, Mesir';
     guardian = 'Wali: Bpk. Mansyur Abdillah & Ibu Maryam';
     emailSlug = 'zaid';
   } else if (safeName.toLowerCase().includes('farhan')) {
-    placement = 'Rumah 2 · Madinat Nasr, Kairo, Mesir';
+    placement = 'Rumah 2 · Hay Asyir, Kairo, Mesir';
     guardian = 'Wali: Bpk. Umar Al-Ghifari';
     emailSlug = 'farhan';
   }
@@ -1153,7 +1153,7 @@ const SANTRI_PROFILES = {
   'raihan': {
     name: 'Ahmad Raihan',
     status: 'Santri Aktif (Tahun ke-1)',
-    meta: 'Asrama Madinat Nasr, Rumah 1 · Bergabung: Juli 2026 · Muadalah Al-Azhar Kairo',
+    meta: 'Asrama Hay Asyir, Rumah 1 · Bergabung: Juli 2026 · Muadalah Al-Azhar Kairo',
     target: 'Juli 2030 (S1 Syari\'ah Al-Azhar)',
     avatar: 'assets/avatar-hamasah.png',
     statProg: '85% Selesai',
@@ -1168,7 +1168,7 @@ const SANTRI_PROFILES = {
   'fatih': {
     name: 'Muhammad Fatih',
     status: 'Santri Aktif (Tahun ke-1)',
-    meta: 'Asrama Madinat Nasr, Rumah 2 · Bergabung: Juli 2026 · Muadalah Al-Azhar Kairo',
+    meta: 'Asrama Hay Asyir, Rumah 2 · Bergabung: Juli 2026 · Muadalah Al-Azhar Kairo',
     target: 'Juli 2030 (S1 Ushuluddin Al-Azhar)',
     avatar: 'assets/avatar-hamasah.png',
     statProg: '78% Selesai',
@@ -1183,7 +1183,7 @@ const SANTRI_PROFILES = {
   'zaid': {
     name: 'Zaid Abdillah',
     status: 'Santri Aktif (Tahun ke-1)',
-    meta: 'Asrama Madinat Nasr, Rumah 1 · Bergabung: Juli 2026 · Muadalah Al-Azhar Kairo',
+    meta: 'Asrama Hay Asyir, Rumah 1 · Bergabung: Juli 2026 · Muadalah Al-Azhar Kairo',
     target: 'Juli 2030 (S1 Bahasa Arab Al-Azhar)',
     avatar: 'assets/avatar-hamasah.png',
     statProg: '82% Selesai',
@@ -1199,20 +1199,20 @@ const SANTRI_PROFILES = {
 
 const SANTRI_ACTIVITIES = {
   'today': [
-    { time: '04:30 - 06:00', title: 'Sholat Subuh Berjamaah & Halaqah Dzikir Pagi', status: 'Terlaksana Tepat Waktu', notes: 'Santri hadir di shaf pertama masjid asrama, melantunkan dzikir Al-Ma\'tsurat dan menyimak tasmi\' hafalan Al-Qur\'an 1 juz.', loc: 'Masjid Asrama Madinat Nasr, Kairo' },
+    { time: '04:30 - 06:00', title: 'Sholat Subuh Berjamaah & Halaqah Dzikir Pagi', status: 'Terlaksana Tepat Waktu', notes: 'Santri hadir di shaf pertama masjid asrama, melantunkan dzikir Al-Ma\'tsurat dan menyimak tasmi\' hafalan Al-Qur\'an 1 juz.', loc: 'Masjid Asrama Hay Asyir, Kairo' },
     { time: '08:30 - 12:00', title: 'Kelas Bahasa Arab & Muadalah Markaz Lughoh', status: 'Hadir & Aktif', notes: 'Sesi dialog percakapan fushah dan telaah balaghah Arab bersama dosen penutur asli Al-Azhar.', loc: 'Markaz Lughoh Al-Azhar, Nasr City' },
-    { time: '13:30 - 15:00', title: 'Makan Siang Bersama & Istirahat Qailulah', status: 'Tercatat di Asrama', notes: 'Pemenuhan asupan gizi harian santri melalui katering asrama terpantau lancar dan higienis.', loc: 'Ruang Makan Asrama Madinat Nasr' },
+    { time: '13:30 - 15:00', title: 'Makan Siang Bersama & Istirahat Qailulah', status: 'Tercatat di Asrama', notes: 'Pemenuhan asupan gizi harian santri melalui katering asrama terpantau lancar dan higienis.', loc: 'Ruang Makan Asrama Hay Asyir' },
     { time: '16:30 - 18:30', title: 'Majelis Talaqqi Kitab Turats bersama Masyayikh Al-Azhar', status: 'Hadir di Majelis', notes: 'Menyimak pembacaan matan Fathul Qorib pasal Thaharah dan mencatat faidah syarah langsung dari ulama Al-Azhar.', loc: 'Rawaq Al-Jami\' Al-Azhar, Kairo Lama' },
-    { time: '20:00 - 21:30', title: 'Mudzakarah Mandiri & Mutaba\'ah Adab Musyrif', status: 'Tervalidasi Musyrif', notes: 'Mengulang hafalan kaidah fiqh bersama teman serumah dan menyetorkan kartu mutaba\'ah adab harian kepada pembina asrama.', loc: 'Ruang Belajar Lantai 2, Asrama Madinat Nasr' }
+    { time: '20:00 - 21:30', title: 'Mudzakarah Mandiri & Mutaba\'ah Adab Musyrif', status: 'Tervalidasi Musyrif', notes: 'Mengulang hafalan kaidah fiqh bersama teman serumah dan menyetorkan kartu mutaba\'ah adab harian kepada pembina asrama.', loc: 'Ruang Belajar Lantai 2, Asrama Hay Asyir' }
   ],
   'yesterday': [
-    { time: '04:30 - 06:00', title: 'Sholat Subuh Berjamaah & Tasmi\' Mandiri', status: 'Terlaksana Tepat Waktu', notes: 'Menyetorkan hafalan lanjutan juz ke-7 kepada musyrif asrama dengan kelancaran mumtaz.', loc: 'Masjid Asrama Madinat Nasr, Kairo' },
+    { time: '04:30 - 06:00', title: 'Sholat Subuh Berjamaah & Tasmi\' Mandiri', status: 'Terlaksana Tepat Waktu', notes: 'Menyetorkan hafalan lanjutan juz ke-7 kepada musyrif asrama dengan kelancaran mumtaz.', loc: 'Masjid Asrama Hay Asyir, Kairo' },
     { time: '09:00 - 12:30', title: 'Simulasi Latihan Soal Ujian Muadalah', status: 'Selesai (Skor 92)', notes: 'Mengerjakan try-out soal terpadu materi tauhid, hadits, dan ushul fiqh Al-Azhar.', loc: 'Laboratorium Komputer Asrama Kairo' },
-    { time: '16:30 - 18:30', title: 'Kajian I\'rob Matan Al-Ajurrumiyyah', status: 'Hadir Penuh', notes: 'Praktik langsung membedah tarkib susunan kalimat bahasa Arab klasik bersama ustaz pembina.', loc: 'Aula Asrama Madinat Nasr' },
-    { time: '20:00 - 21:00', title: 'Evaluasi Pekanan Adab & Kebersihan Rumah Asrama', status: 'Predikat A (Sangat Bersih)', notes: 'Inspeksi berkala kerapian rumah asrama santri nomor 1 oleh pengawas asrama.', loc: 'Rumah 1, Madinat Nasr' }
+    { time: '16:30 - 18:30', title: 'Kajian I\'rob Matan Al-Ajurrumiyyah', status: 'Hadir Penuh', notes: 'Praktik langsung membedah tarkib susunan kalimat bahasa Arab klasik bersama ustaz pembina.', loc: 'Aula Asrama Hay Asyir' },
+    { time: '20:00 - 21:00', title: 'Evaluasi Pekanan Adab & Kebersihan Rumah Asrama', status: 'Predikat A (Sangat Bersih)', notes: 'Inspeksi berkala kerapian rumah asrama santri nomor 1 oleh pengawas asrama.', loc: 'Asrama 1, Hay Asyir' }
   ],
   'rekap': [
-    { time: 'Pekan I Sep', title: 'Rekap Presensi Sholat Subuh: 100% (7/7 Hari)', status: 'Predikat Mumtaz', notes: 'Kehadiran sempurna tanpa masbuq selama satu pekan penuh di masjid asrama.', loc: 'Masjid Asrama Madinat Nasr' },
+    { time: 'Pekan I Sep', title: 'Rekap Presensi Sholat Subuh: 100% (7/7 Hari)', status: 'Predikat Mumtaz', notes: 'Kehadiran sempurna tanpa masbuq selama satu pekan penuh di masjid asrama.', loc: 'Masjid Asrama Hay Asyir' },
     { time: 'Pekan I Sep', title: 'Target Setoran Hafalan Kitab: 3 Bab Tuntas', status: 'Lulus Uji Simak', notes: 'Khatam pasal fardhu wudhu dan hal-hal yang membatalkan wudhu pada matan Fathul Qorib.', loc: 'Halaqah Asrama Kairo' },
     { time: 'Pekan I Sep', title: 'Ujian Pekanan Bahasa Arab Mustawa 2: Nilai 94', status: 'Lulus Ujian', notes: 'Memperoleh peringkat 3 terbaik di kelas persiapan Markaz Lughoh Al-Azhar.', loc: 'Markaz Lughoh Al-Azhar' }
   ]
@@ -1457,7 +1457,7 @@ function initFamilyDashboard() {
         return;
       }
       statusDoa.style.display = 'block';
-      statusDoa.innerText = 'Pesan doa Bapak & Ibu telah tersimpan dan akan disampaikan langsung oleh Musyrif saat halaqah malam di Rumah 1 Madinat Nasr.';
+      statusDoa.innerText = 'Pesan doa Bapak & Ibu telah tersimpan dan akan disampaikan langsung oleh Musyrif saat halaqah malam di Asrama 1 Hay Asyir.';
       inputDoa.value = '';
 
       setTimeout(() => {
@@ -1529,7 +1529,7 @@ const HAMASAH_AI_KB = [
   {
     keys: ['biaya', 'spp', 'bayar', 'uang', 'mahal', 'iuran', 'dana', 'tarif'],
     answer: `<strong>Perkiraan biaya (simulasi):</strong><br>
-      - SPP bimbingan Hamasah: sekitar <strong>Rp2.500.000/bulan</strong>, sudah termasuk asrama ber-AC di Rumah 1 Madinat Nasr, katering harian, dan bimbingan talaqqi.<br>
+      - SPP bimbingan Hamasah: sekitar <strong>Rp2.500.000/bulan</strong>, sudah termasuk asrama ber-AC di Asrama 1 Hay Asyir, katering harian, dan bimbingan talaqqi.<br>
       - Biaya sekali di awal: pendaftaran, pengurusan visa pelajar, dan tiket keberangkatan.<br>
       - Kuliah di Al-Azhar sendiri bebas biaya SPP bagi mahasiswa internasional yang memenuhi persyaratan dokumen.<br><br>
       Rincian resmi dan simulasi lengkap ada di brosur digital pada bagian <em>Layanan Publik</em>.`
@@ -1549,13 +1549,13 @@ const HAMASAH_AI_KB = [
       1. Registrasi online & verifikasi berkas awal.<br>
       2. Validasi dokumen resmi (ijazah, terjemahan, paspor) & pemantapan bahasa <em>tahdid mustawa</em>.<br>
       3. Penerbitan visa pelajar & pemesanan tiket penerbangan rombongan.<br>
-      4. Terbang bersama ke Kairo & penjemputan resmi ke asrama Madinat Nasr.<br><br>
+      4. Terbang bersama ke Kairo & penjemputan resmi ke asrama Hay Asyir.<br><br>
       Setiap santri dapat memantau estimasi tanggal terbang dan kelengkapan berkas lewat akun keberangkatan masing-masing. Contoh simulasi: rombongan kloter 1 terbang 15 September 2026.`
   },
   {
     keys: ['kairo', 'mesir', 'hidup', 'tinggal', 'asrama', 'makan', 'keseharian', 'sehari-hari', 'cuaca', 'aman', 'lingkungan'],
     answer: `<strong>Keseharian santri di Kairo (simulasi):</strong><br>
-      - Tinggal di asrama Hamasah, Rumah 1 kawasan Madinat Nasr, kamar ber-AC dan katering 3x sehari.<br>
+      - Tinggal di asrama Hamasah, kawasan Hay Asyir, kamar ber-AC dan katering 3x sehari.<br>
       - Ritme harian: Subuh berjamaah, Markaz Lughoh (bahasa), talaqqi di Rawaq Al-Azhar, lalu mudzakarah malam.<br>
       - Didampingi musyrif asrama yang memantau adab, ibadah, dan adaptasi santri baru.<br><br>
       Kegiatan hariannya bisa dilihat orang tua lewat <em>Portal Keluarga</em>.`
@@ -1599,12 +1599,12 @@ const HAMASAH_AI_KB = [
   {
     keys: ['lokasi', 'alamat', 'kantor', 'kontak', 'hubungi', 'whatsapp', 'wa ', 'telepon', 'narahubung', 'admin'],
     answer: `<strong>Kontak Hamasah International:</strong><br>
-      Untuk pertanyaan lebih detail atau bicara langsung dengan panitia, gunakan tombol <em>Diskusikan</em> di atas atau hubungi admin resmi lewat WhatsApp yang tertera di menu Layanan Publik.<br><br>
-      Asrama santri berada di kawasan Madinat Nasr, Kairo, Mesir.`
+      Untuk pertanyaan lebih detail atau bicara langsung dengan tim konsultan, gunakan tombol <em>Diskusikan</em> di atas atau hubungi admin resmi lewat WhatsApp yang tertera di menu Layanan Publik.<br><br>
+      Asrama santri berada di kawasan Hay Asyir, Kairo, Mesir.`
   }
 ];
 
-const HAMASAH_AI_FALLBACK = `Pertanyaan bagus. Untuk hal spesifik seperti ini, jawaban paling akurat datang langsung dari panitia Hamasah.<br><br>
+const HAMASAH_AI_FALLBACK = `Pertanyaan bagus. Untuk hal spesifik seperti ini, jawaban paling akurat datang langsung dari tim konsultan Hamasah.<br><br>
   Sementara itu, kamu bisa jelajahi menu <em>Layanan Publik</em> untuk brosur & alur pendaftaran, atau klik tombol <strong>Diskusikan Bersama Dar Dev</strong> di atas. Pada versi live, saya akan langsung menyambungkanmu ke admin WhatsApp resmi.`;
 
 function answerHamasahAi(text, style) {
