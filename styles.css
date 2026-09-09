@@ -5063,6 +5063,99 @@ button, input, select, textarea {
   white-space: nowrap;
 }
 
+/* 3-Phase Progressive Journey for Kendala Adaptasi Santri */
+.kendala-step-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.kendala-flow-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-top: 3px solid #d1d5db;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.kendala-flow-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.kendala-flow-item.flow-problem {
+  border-top-color: #f59e0b;
+  background: #fffdfa;
+  border-color: #f6e8cc;
+}
+
+.kendala-flow-item.flow-solution {
+  border-top-color: #2563eb;
+  background: #f8faff;
+  border-color: #dbeafe;
+}
+
+.kendala-flow-item.flow-result {
+  border-top-color: #059669;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.flow-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flow-pill {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3.5px 9px;
+  border-radius: 6px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.flow-pill.pill-amber {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.flow-pill.pill-blue {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.flow-pill.pill-emerald {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.flow-item-text {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0;
+}
+
+.flow-item-text.flow-text-highlight {
+  color: #065f46;
+  font-weight: 600;
+}
+
+/* Fallback legacy compatibility for kendala-content-body */
 .kendala-content-body {
   display: flex;
   flex-direction: column;
@@ -5459,6 +5552,10 @@ button, input, select, textarea {
   .kendala-row {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+  .kendala-step-flow {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
   .family-gallery-grid {
     grid-template-columns: 1fr;
@@ -8515,6 +8612,7 @@ button, input, select, textarea {
   }
   .kendala-label-tag { white-space: normal; }
   .kendala-row { row-gap: 4px; }
+  .kendala-step-flow { grid-template-columns: 1fr; gap: 10px; }
   .kendala-card *,
   .family-kendala-section *,
   .rapor-summary-banner *,
