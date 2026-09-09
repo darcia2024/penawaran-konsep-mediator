@@ -53,12 +53,12 @@ Rancangan 1 Website Terpadu dengan 2 Layanan Utama (**Publik & App Portal**) dar
 
 ---
 
-## Roadmap Pengembangan 5 Fase Bertahap
-- **FASE 01:** Layanan 1 (Publik, Profil, Berita Kegiatan Mesir & Akun Keberangkatan)
-- **FASE 02:** Layanan 2 (Portal Operasional: Staff & Auto Invoice/Kuitansi)
-- **FASE 03:** Layanan 2 (Portal Keluarga: Monitoring Wali Santri & Kuitansi PDF)
-- **FASE 04:** Layanan 2 (Portal Akademik: Santri, Pembina & LMS AI Study Partner)
-- **FASE 05:** Integrasi Database Terpadu & Keamanan Akses Enkripsi
+## Roadmap Pengembangan 1 Bulan (4 Pekan Intensif)
+- **PEKAN 1 (Hari 1 - 7):** Layanan 1 (Publik, Profil Lembaga, Berita Kegiatan Mesir & Akun Keberangkatan)
+- **PEKAN 2 (Hari 8 - 14):** Layanan 2 (Portal Operasional: Staff, Logistik Asrama & Auto Invoice/Kuitansi PDF)
+- **PEKAN 3 (Hari 15 - 21):** Layanan 2 (Portal Keluarga: Monitoring Wali Santri Hay Asyir & Kuitansi Sah)
+- **PEKAN 4 AWAL (Hari 22 - 26):** Layanan 2 (Portal Akademik: Santri, Musyrif & LMS AI Study Partner)
+- **PEKAN 4 AKHIR (Hari 27 - 30):** Integrasi Database Terpadu, Single SSO, Pengujian & Go-Live
 
 ---
 

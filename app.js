@@ -1601,6 +1601,16 @@ const HAMASAH_AI_KB = [
     answer: `<strong>Kontak Hamasah International:</strong><br>
       Untuk pertanyaan lebih detail atau bicara langsung dengan tim konsultan, gunakan tombol <em>Diskusikan</em> di atas atau hubungi admin resmi lewat WhatsApp yang tertera di menu Layanan Publik.<br><br>
       Asrama santri berada di kawasan Hay Asyir, Kairo, Mesir.`
+  },
+  {
+    keys: ['lama pengerjaan', 'waktu pengerjaan', 'estimasi pengerjaan', 'berapa lama bikin', 'durasi pengerjaan', 'jadwal pengerjaan', 'roadmap pengerjaan', '1 bulan'],
+    answer: `<strong>Estimasi Pengerjaan Website (Dar Developer):</strong><br>
+      Total estimasi pengerjaan adalah <strong>1 bulan (4 pekan kerja intensif / 30 hari)</strong> terbagi dalam 5 tahap sprint terukur:<br>
+      - <strong>Pekan 1 (Hari 1 - 7):</strong> Layanan 1 Publik & Sistem Registrasi Keberangkatan.<br>
+      - <strong>Pekan 2 (Hari 8 - 14):</strong> Layanan 2 Portal Operasional Staff & Auto Invoice/Kuitansi PDF.<br>
+      - <strong>Pekan 3 (Hari 15 - 21):</strong> Layanan 2 Portal Keluarga Wali Santri & Rapor Digital.<br>
+      - <strong>Pekan 4 Awal (Hari 22 - 26):</strong> Layanan 2 Portal Akademik Talaqqi Turats & LMS.<br>
+      - <strong>Pekan 4 Akhir (Hari 27 - 30):</strong> Integrasi Single SSO, Enkripsi, Uji Stabilitas & Go-Live.`
   }
 ];
 
